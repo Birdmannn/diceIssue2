@@ -12,14 +12,14 @@ public class AverageDiceTable {
 		System.out.println("Enter the total you wish to roll");
 		
 		try {
-			while (true) {
+			while (true) {                                                          //could have used a do-while loop here.
 				number = TextIO.getlnInt();
 				averageRoll(number);
 				System.out.println("Total On Dice               Average Number Of Rolls");
 				System.out.println("--------------             ------------------------");
 				System.out.printf("     %d                             %.4f", number, average);
 				System.out.print("\n\n\n");
-				System.out.println("Do you wish to roll again?\nAnswer with with \"true\" or \"false\".");
+				System.out.println("Do you wish to roll again?");
 				rollAgain = TextIO.getlnBoolean();
 				if (!rollAgain) {
 					break;
